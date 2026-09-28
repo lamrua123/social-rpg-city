@@ -141,7 +141,7 @@ export class CityScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.load.image('kindred-town-art', '/art/kindred-town.png');
+    this.load.image('kindred-town-art', `${import.meta.env.BASE_URL}art/kindred-town.png`);
   }
 
   applySnapshot(snapshot: RoomSnapshot): void {

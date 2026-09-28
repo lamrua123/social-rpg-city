@@ -593,7 +593,7 @@ function TownMapArtwork({ position }: { position: { x: number; y: number } }) {
   const y = Math.max(18, Math.min(WORLD.height - 18, position.y));
   return (
     <svg className="town-map-art" viewBox={`0 0 ${WORLD.width} ${WORLD.height}`} role="img" aria-label="Bản đồ minh họa quảng trường, quán cà phê, công viên, góc yên tĩnh, bờ sông và vị trí của bạn" shapeRendering="crispEdges">
-      <image href="/art/kindred-town.png" x="0" y="0" width={WORLD.width} height={WORLD.height} preserveAspectRatio="none" />
+      <image href={`${import.meta.env.BASE_URL}art/kindred-town.png`} x="0" y="0" width={WORLD.width} height={WORLD.height} preserveAspectRatio="none" />
       <g className="player-map-pin" transform={`translate(${x} ${y})`}><circle r="34" fill="#f5e8c9" opacity=".52"/><circle r="21" fill="#fffaf0" stroke="#49654d" strokeWidth="8"/><circle r="11" fill="#d66f5d" stroke="#fffaf0" strokeWidth="4"/><path d="M0 44-10 22h20z" fill="#d66f5d" stroke="#fffaf0" strokeWidth="4"/></g>
     </svg>
   );

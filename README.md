@@ -21,10 +21,11 @@ Vite mở giao diện ở `http://localhost:5199`; Worker và Durable Objects ch
 
 ## Bản public
 
-- Thành phố: [https://kindred-town.talented-tumble.workers.dev](https://kindred-town.talented-tumble.workers.dev)
+- Link chơi: [https://lamrua123.github.io/social-rpg-city/](https://lamrua123.github.io/social-rpg-city/)
+- Máy chủ nhiều người chơi: [kindred-town.talented-tumble.workers.dev](https://kindred-town.talented-tumble.workers.dev)
 - WebSocket: `wss://kindred-town.talented-tumble.workers.dev/ws`
 
-Frontend và realtime server được phục vụ cùng origin bởi Cloudflare Worker. Bản hiện tại chạy trong temporary preview account; hãy claim link Wrangler tạo trong thời hạn hiển thị ở đầu ra deploy để giữ Worker và Durable Object. Claim link chỉ gửi trực tiếp cho người dùng, không lưu trong repository. Xem [hướng dẫn deploy](docs/DEPLOYMENT.md).
+GitHub Pages tự build và xuất bản frontend mỗi khi có thay đổi trên `main`. Giao diện dùng máy chủ Cloudflare để chat và đồng bộ người chơi theo thời gian thực. Xem [hướng dẫn deploy](docs/DEPLOYMENT.md).
 
 ## Build và kiểm tra
 
