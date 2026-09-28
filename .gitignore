@@ -1,0 +1,8 @@
+node_modules/
+dist/
+artifacts/
+.wrangler/
+.env*
+!.env.example
+*.log
+*.tsbuildinfo
